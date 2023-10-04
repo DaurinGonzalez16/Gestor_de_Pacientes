@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "KIN5+eQq7g5dvCZnvhhiYIxLBLNujv5fg/I1j2ZIow0PyF2VmjGd/E4aD5+jK+ciW+KuGFbFrwxCVqIKD5K8ew==",
+  "success": true,
+  "projectFilePath": "D:\\GESTOR DE PACIENTES\\GestorPacientes\\GestorPacientes.Api\\GestorPacientes.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dauri\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\dauri\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\dauri\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\dauri\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\dauri\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\dauri\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
