@@ -1,6 +1,7 @@
 ﻿using GestorPacientes.Domain.Entities;
 using GestorPacientes.Infraestructure.Context;
 using GestorPacientes.Infraestructure.Core;
+using GestorPacientes.Infraestructure.Exceptios;
 using GestorPacientes.Infraestructure.Extensions;
 using GestorPacientes.Infraestructure.Interfaces;
 using GestorPacientes.Infraestructure.Models;
@@ -29,17 +30,60 @@ namespace GestorPacientes.Infraestructure.Repository
 
         public override void Add(Agenda_Citas entity)
         {
+            if (this.Exists(cd => cd.Id_citas == entity.Id_citas))
+                throw new PacientesExceptions("El Id ya Existe");
+
             base.Add(entity);
+            base.SaveChanged();
         }
 
         public override void Remove(Agenda_Citas entity)
         {
-            base.Remove(entity);
+
+            try
+            {
+                Agenda_Citas AgendaToRemove = base.GetEntity(entity.Id_citas);
+
+                if (AgendaToRemove == null)
+                {
+                    throw new PacientesExceptions("La Cita No Existe");
+                }
+
+                AgendaToRemove.Deleted = true;
+                AgendaToRemove.DeletedDate = DateTime.Now;
+                AgendaToRemove.UserDeleted = entity.UserDeleted;
+
+                base.SaveChanged();
+            }
+            catch (Exception ex)
+            {
+                this.logger.LogError("Ocurrió un error al eliminar la cita: " + ex.Message, ex);
+            }
         }
 
         public override void Update(Agenda_Citas entity)
         {
-            base.Update(entity);
+            try
+            {
+                Agenda_Citas agenda_citas = base.GetEntity(entity.Id_citas);
+                
+                if (agenda_citas is null)
+                    throw new PacientesExceptions("La cita no existe.");
+
+                agenda_citas.Id_citas = entity.Id_citas;
+                agenda_citas.id_paciente = entity.id_paciente;
+                agenda_citas.Nombre_paciente = entity.Nombre_paciente;
+                agenda_citas.Fecha_cita = entity.Fecha_cita;
+                agenda_citas.Precio = entity.Precio;
+                agenda_citas.Asistio = entity.Asistio;
+  
+                base.Update(agenda_citas);
+                base.SaveChanged();
+            }
+            catch (Exception ex)
+            {
+                this.logger.LogError("Ocurrió un error actualizando la cita", ex.ToString());
+            }
         }
 
         public AgendaCitaModel GetRegistro(int IdAgenda)
@@ -48,7 +92,7 @@ namespace GestorPacientes.Infraestructure.Repository
 
             try
             {
-                model = base.GetPaciente_Id(IdAgenda).ConvertToEntityAgendaCitasToModel();
+                model = base.GetEntity(IdAgenda).ConvertToEntityAgendaCitasToModel();
             }
             catch (Exception ex)
             {

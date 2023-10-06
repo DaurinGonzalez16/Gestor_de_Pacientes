@@ -47,7 +47,7 @@ namespace GestorPacientes.Infraestructure.Repository
 
             try
             {
-                Pacientes PacientesToRemove = base.GetPaciente_Id(entity.Idpacientes);
+                Pacientes PacientesToRemove = base.GetEntity(entity.Idpacientes);
 
                 if (PacientesToRemove == null)
                 {
@@ -72,7 +72,7 @@ namespace GestorPacientes.Infraestructure.Repository
 
             try
             {
-                Pacientes _pacienteActualizado = base.GetPaciente_Id(entity.Idpacientes);
+                Pacientes _pacienteActualizado = base.GetEntity(entity.Idpacientes);
                 if (_pacienteActualizado is null)
                     throw new PacientesExceptions("El Paciente no existe.");
 
@@ -92,10 +92,6 @@ namespace GestorPacientes.Infraestructure.Repository
                 this._logger.LogError("Ocurrió un error actualizando el Paciente", ex.ToString());
             }
 
-
-
-
-
         }
 
         public PacientesModel GetPaciente(int? Idpaciente)
@@ -104,7 +100,7 @@ namespace GestorPacientes.Infraestructure.Repository
 
             try
             {
-                pacientesModel = base.GetPaciente_Id(Idpaciente).ConvertToEntityPacientesToModel();
+                pacientesModel = base.GetEntity(Idpaciente).ConvertToEntityPacientesToModel();
             }
             catch (Exception ex)
             {

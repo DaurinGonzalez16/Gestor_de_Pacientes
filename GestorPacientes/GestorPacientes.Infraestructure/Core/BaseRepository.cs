@@ -54,7 +54,7 @@ namespace GestorPacientes.Infraestructure.Core
             return this.MySet.ToList();
         }
 
-        public virtual TEntety GetPaciente_Id(int? id)
+        public virtual TEntety GetEntity(int? id)
         {
             return this.MySet.Find(id);        
         }

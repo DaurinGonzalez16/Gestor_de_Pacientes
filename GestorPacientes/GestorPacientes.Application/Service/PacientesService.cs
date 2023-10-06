@@ -114,7 +114,7 @@ namespace GestorPacientes.Application.Service
             try
             {
                
-                var _GetPaciente = this.pacientesRepository.GetPaciente_Id(model.Idpacientes);
+                var _GetPaciente = this.pacientesRepository.GetEntity(model.Idpacientes);
 
                 if (_GetPaciente == null)
                 {
@@ -150,7 +150,7 @@ namespace GestorPacientes.Application.Service
                     return _Service;
                 }
 
-                var paciente = this.pacientesRepository.GetPaciente_Id(model.Idpacientes);
+                var paciente = this.pacientesRepository.GetEntity(model.Idpacientes);
 
                 if (paciente == null)
                 {

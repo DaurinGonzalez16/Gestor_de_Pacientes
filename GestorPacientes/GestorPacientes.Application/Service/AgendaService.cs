@@ -66,19 +66,12 @@ namespace GestorPacientes.Application.Service
         public ServiceResult Remove(AgendaCitaRemoveDto model)
         {
             ServiceResult _servicios = new ServiceResult();
-            ValidationsAgendaCitas validationsAgenda = new ValidationsAgendaCitas();
 
             try
-            {
+            {       
+                var _GetCita = this._agendaCitasRepository.GetEntity(model.Id_citas);
 
-                if (!validationsAgenda.Cumple_ValidarAgenda(model))
-                {
-                    return _servicios;
-                }
-
-                var _GetCita = this._agendaCitasRepository.GetPaciente_Id(model.Id_citas);
-
-                if (_GetCita != null)
+                if (_GetCita == null)
                 {
                     _servicios.Success = false;
                     _servicios.Message = "LA CITA NO EXISTE";
@@ -152,27 +145,25 @@ namespace GestorPacientes.Application.Service
                     return _Service;
                 }
 
-                var paciente = this._agendaCitasRepository.GetPaciente_Id(model.Id_citas);
+                var Cita = this._agendaCitasRepository.GetEntity(model.Id_citas);
 
-                if (paciente != null)
+                if (Cita == null)
                 {
                     _Service.Success = false;
                     _Service.Message = "LA CITA NO EXISTE";
                     return _Service;
                 }
 
-                DateTime fechaactual = DateTime.Now;
+                Cita.Id_citas = model.Id_citas;
+                Cita.id_paciente = model.id_paciente;
+                Cita.Nombre_paciente = model.Nombre_paciente;
+                Cita.Fecha_cita = model.Fecha_cita;
+                Cita.Precio = model.Precio;
+                Cita.Asistio = model.Asistio;
+                Cita.CreationDate = DateTime.Now;
+                Cita.CreationUser = model.ChangeUser;
 
-                paciente.Id_citas = model.Id_citas;
-                paciente.id_paciente = model.id_paciente;
-                paciente.Nombre_paciente = model.Nombre_paciente;
-                paciente.Fecha_cita = model.Fecha_cita;
-                paciente.Precio = model.Precio;
-                paciente.Asistio = model.Asistio;
-                paciente.CreationDate = fechaactual;
-                paciente.CreationUser = model.ChangeUser;
-
-                this._agendaCitasRepository.Update(paciente);
+                this._agendaCitasRepository.Update(Cita);
                 _Service.Message = "Cita actualizada correctamente.";
 
             }
