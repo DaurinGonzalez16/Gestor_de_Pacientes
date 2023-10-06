@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestorPacientes.Web", "GestorPacientes.Web\GestorPacientes.Web.csproj", "{09DB43F6-8E84-4749-89CA-ABC26E0C2375}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestorPacientes.Web", "GestorPacientes.Web\GestorPacientes.Web.csproj", "{09DB43F6-8E84-4749-89CA-ABC26E0C2375}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestorPacientes.Domain", "GestorPacientes.Domain\GestorPacientes.Domain.csproj", "{BB85150E-8386-462B-9D7A-D67BC90472CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestorPacientes.Domain", "GestorPacientes.Domain\GestorPacientes.Domain.csproj", "{BB85150E-8386-462B-9D7A-D67BC90472CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestorPacientes.Infraestructure", "GestorPacientes.Infraestructure\GestorPacientes.Infraestructure.csproj", "{98947385-556E-46F3-81E4-8D1C00A8EBCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestorPacientes.Infraestructure", "GestorPacientes.Infraestructure\GestorPacientes.Infraestructure.csproj", "{98947385-556E-46F3-81E4-8D1C00A8EBCE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestorPacientes.Application", "GestorPacientes.Application\GestorPacientes.Application.csproj", "{32452B86-2AFF-49F1-A2DB-D8E807A814D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestorPacientes.Application", "GestorPacientes.Application\GestorPacientes.Application.csproj", "{32452B86-2AFF-49F1-A2DB-D8E807A814D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestorPacientes.loc", "GestorPacientes.loc\GestorPacientes.loc.csproj", "{7860CC60-89BB-4C3F-945A-4A0A9836493A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestorPacientes.loc", "GestorPacientes.loc\GestorPacientes.loc.csproj", "{7860CC60-89BB-4C3F-945A-4A0A9836493A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestorPacientes.Api", "GestorPacientes.Api\GestorPacientes.Api.csproj", "{1315E671-D2E4-423E-9891-36F2EED2A6FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7860CC60-89BB-4C3F-945A-4A0A9836493A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7860CC60-89BB-4C3F-945A-4A0A9836493A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7860CC60-89BB-4C3F-945A-4A0A9836493A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1315E671-D2E4-423E-9891-36F2EED2A6FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1315E671-D2E4-423E-9891-36F2EED2A6FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1315E671-D2E4-423E-9891-36F2EED2A6FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1315E671-D2E4-423E-9891-36F2EED2A6FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "P4WfdzPNupk/W25zw9nkHaIiXJyf0XzoRpr+ENSdG54=",
+  "Source": "GestorPacientes.Api",
+  "BasePath": "_content/GestorPacientes.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

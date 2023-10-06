@@ -1,0 +1,15 @@
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.Application\obj\Debug\netstandard2.1\GestorPacientes.Application.csproj.AssemblyReference.cache
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.Application\obj\Debug\netstandard2.1\GestorPacientes.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.Application\obj\Debug\netstandard2.1\GestorPacientes.Application.AssemblyInfoInputs.cache
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.Application\obj\Debug\netstandard2.1\GestorPacientes.Application.AssemblyInfo.cs
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.Application\obj\Debug\netstandard2.1\GestorPacientes.Application.csproj.CoreCompileInputs.cache
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.Application\bin\Debug\netstandard2.1\GestorPacientes.Application.deps.json
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.Application\bin\Debug\netstandard2.1\GestorPacientes.Application.dll
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.Application\bin\Debug\netstandard2.1\GestorPacientes.Application.pdb
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.Application\bin\Debug\netstandard2.1\GestorPacientes.Domain.dll
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.Application\bin\Debug\netstandard2.1\GestorPacientes.Infraestructure.dll
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.Application\bin\Debug\netstandard2.1\GestorPacientes.Infraestructure.pdb
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.Application\bin\Debug\netstandard2.1\GestorPacientes.Domain.pdb
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.Application\obj\Debug\netstandard2.1\GestorPacientes.Application.csproj.CopyComplete
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.Application\obj\Debug\netstandard2.1\GestorPacientes.Application.dll
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.Application\obj\Debug\netstandard2.1\GestorPacientes.Application.pdb
