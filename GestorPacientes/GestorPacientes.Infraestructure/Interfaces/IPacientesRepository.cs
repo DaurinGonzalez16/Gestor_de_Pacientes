@@ -10,7 +10,7 @@ namespace GestorPacientes.Infraestructure.Interfaces
     public interface IPacientesRepository: IRepositoryBase<Pacientes>
     {
         /*DEFINICION DE LOS METODOS PROPIOS DE PACIENTES*/
-        PacientesModel GetPaciente(int? Idpaciente);
+        PacientesModel GetPaciente(int Idpaciente);
         List<PacientesModel> GetPacientes();
     }
 }

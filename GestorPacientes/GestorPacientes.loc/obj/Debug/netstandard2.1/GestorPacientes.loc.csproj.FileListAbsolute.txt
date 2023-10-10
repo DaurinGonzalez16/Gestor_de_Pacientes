@@ -8,3 +8,10 @@ D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.loc\obj\Debug\netstandard
 D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.loc\obj\Debug\netstandard2.1\GestorPacientes.loc.csproj.CoreCompileInputs.cache
 D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.loc\obj\Debug\netstandard2.1\GestorPacientes.loc.dll
 D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.loc\obj\Debug\netstandard2.1\GestorPacientes.loc.pdb
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.loc\bin\Debug\netstandard2.1\GestorPacientes.Application.dll
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.loc\bin\Debug\netstandard2.1\GestorPacientes.Domain.dll
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.loc\bin\Debug\netstandard2.1\GestorPacientes.Infraestructure.dll
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.loc\bin\Debug\netstandard2.1\GestorPacientes.Application.pdb
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.loc\bin\Debug\netstandard2.1\GestorPacientes.Domain.pdb
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.loc\bin\Debug\netstandard2.1\GestorPacientes.Infraestructure.pdb
+D:\GESTOR DE PACIENTES\GestorPacientes\GestorPacientes.loc\obj\Debug\netstandard2.1\GestorPacientes.loc.csproj.CopyComplete

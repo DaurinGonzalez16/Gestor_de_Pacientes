@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestorPacientes.Infraestruc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestorPacientes.Application", "GestorPacientes.Application\GestorPacientes.Application.csproj", "{32452B86-2AFF-49F1-A2DB-D8E807A814D2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestorPacientes.loc", "GestorPacientes.loc\GestorPacientes.loc.csproj", "{7860CC60-89BB-4C3F-945A-4A0A9836493A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestorPacientes.Api", "GestorPacientes.Api\GestorPacientes.Api.csproj", "{1315E671-D2E4-423E-9891-36F2EED2A6FF}"
 EndProject
 Global
@@ -37,10 +35,6 @@ Global
 		{32452B86-2AFF-49F1-A2DB-D8E807A814D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32452B86-2AFF-49F1-A2DB-D8E807A814D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32452B86-2AFF-49F1-A2DB-D8E807A814D2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7860CC60-89BB-4C3F-945A-4A0A9836493A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7860CC60-89BB-4C3F-945A-4A0A9836493A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7860CC60-89BB-4C3F-945A-4A0A9836493A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7860CC60-89BB-4C3F-945A-4A0A9836493A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1315E671-D2E4-423E-9891-36F2EED2A6FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1315E671-D2E4-423E-9891-36F2EED2A6FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1315E671-D2E4-423E-9891-36F2EED2A6FF}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -38,10 +38,10 @@ namespace GestorPacientes.Infraestructure.Extensions
                 Nombre_paciente = _agenda.Nombre_paciente,
                 Fecha_cita = _agenda.Fecha_cita,
                 Precio = _agenda.Precio,
-                Asistio = _agenda.Asistio,
+                Asistio = _agenda.Asistio
             };
 
-            return (agendaCitaModel);
+            return agendaCitaModel;
 
         }
 

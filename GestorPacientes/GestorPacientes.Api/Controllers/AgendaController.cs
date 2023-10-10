@@ -63,7 +63,7 @@ namespace GestorPacientes.Api.Controllers
                 return BadRequest(result);
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("Remove")]
         public IActionResult Remove(int id)
         {
             // Crear un objeto PacientesRemoveDto con el ID proporcionado

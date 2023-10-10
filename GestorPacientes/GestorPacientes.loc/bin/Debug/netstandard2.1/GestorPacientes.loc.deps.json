@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.1/": {
       "GestorPacientes.loc/1.0.0": {
         "dependencies": {
+          "GestorPacientes.Application": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.32",
           "System.ComponentModel.Annotations": "5.0.0"
         },
@@ -1424,6 +1425,36 @@
             "fileVersion": "4.6.24705.1"
           }
         }
+      },
+      "GestorPacientes.Application/1.0.0": {
+        "dependencies": {
+          "GestorPacientes.Infraestructure": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.32",
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "runtime": {
+          "GestorPacientes.Application.dll": {}
+        }
+      },
+      "GestorPacientes.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.32",
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "runtime": {
+          "GestorPacientes.Domain.dll": {}
+        }
+      },
+      "GestorPacientes.Infraestructure/1.0.0": {
+        "dependencies": {
+          "GestorPacientes.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "3.1.32",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.32",
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "runtime": {
+          "GestorPacientes.Infraestructure.dll": {}
+        }
       }
     }
   },
@@ -2293,6 +2324,21 @@
       "sha512": "sha512-MYoTCP7EZ98RrANESW05J5ZwskKDoN0AuZ06ZflnowE50LTpbR5yRg3tHckTVm5j/m47stuGgCrCHWePyHS70Q==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "GestorPacientes.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GestorPacientes.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "GestorPacientes.Infraestructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

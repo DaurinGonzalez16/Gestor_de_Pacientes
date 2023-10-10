@@ -94,7 +94,7 @@ namespace GestorPacientes.Infraestructure.Repository
 
         }
 
-        public PacientesModel GetPaciente(int? Idpaciente)
+        public PacientesModel GetPaciente(int Idpaciente)
         {
             PacientesModel pacientesModel = new PacientesModel();
 
@@ -104,7 +104,6 @@ namespace GestorPacientes.Infraestructure.Repository
             }
             catch (Exception ex)
             {
-
 
                 this._logger.LogError("Error Obteniendo el Paciente", ex.ToString());
             }

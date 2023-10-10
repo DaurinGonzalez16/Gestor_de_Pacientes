@@ -12,7 +12,7 @@ namespace GestorPacientes.Domain.Repository
         void Update(TEntity entity);
         void Remove(TEntity entity);
         void SaveChanged();
-        TEntity GetEntity(int? id);
+        TEntity GetEntity(int id);
         List<TEntity> GetEntities();
 
         /*ESTE METODO ES PARA VERIFICAR SI EXISTE*/

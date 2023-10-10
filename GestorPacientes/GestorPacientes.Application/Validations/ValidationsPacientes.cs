@@ -55,7 +55,7 @@ namespace GestorPacientes.Application.Validations
 
             /*DIFERENTES A STRING*/
 
-            if (!model.Idpacientes.HasValue)
+            if (model.Idpacientes == 0)
             {
                 serviceResult.Message = "El IdPaciente si es Requerido";
                 serviceResult.Success = false;

@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "kQNdoiskne73St8ECkQJ8ptISz8lcFMLUfyDqQror4w=",
+  "Hash": "nCOtgkcB47Uta5WgfjlZlKlf4Fbtop86L0mQJsaxDeg=",
   "Source": "GestorPacientes.Web",
   "BasePath": "_content/GestorPacientes.Web",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\GESTOR DE PACIENTES\\GestorPacientes\\GestorPacientes.Api\\GestorPacientes.Api.csproj",
+      "Version": 2,
+      "Source": "GestorPacientes.Api",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "GestorPacientes.Web\\wwwroot",

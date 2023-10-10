@@ -2167,6 +2167,51 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "GestorPacientes.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "GestorPacientes.Infraestructure": "1.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.32",
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GestorPacientes.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GestorPacientes.Application.dll": {}
+        }
+      },
+      "GestorPacientes.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.32",
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GestorPacientes.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GestorPacientes.Domain.dll": {}
+        }
+      },
+      "GestorPacientes.Infraestructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "GestorPacientes.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "3.1.32",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.32",
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/GestorPacientes.Infraestructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GestorPacientes.Infraestructure.dll": {}
+        }
       }
     }
   },
@@ -7096,10 +7141,26 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "GestorPacientes.Application/1.0.0": {
+      "type": "project",
+      "path": "../GestorPacientes.Application/GestorPacientes.Application.csproj",
+      "msbuildProject": "../GestorPacientes.Application/GestorPacientes.Application.csproj"
+    },
+    "GestorPacientes.Domain/1.0.0": {
+      "type": "project",
+      "path": "../GestorPacientes.Domain/GestorPacientes.Domain.csproj",
+      "msbuildProject": "../GestorPacientes.Domain/GestorPacientes.Domain.csproj"
+    },
+    "GestorPacientes.Infraestructure/1.0.0": {
+      "type": "project",
+      "path": "../GestorPacientes.Infraestructure/GestorPacientes.Infraestructure.csproj",
+      "msbuildProject": "../GestorPacientes.Infraestructure/GestorPacientes.Infraestructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
+      "GestorPacientes.Application >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.32",
       "System.ComponentModel.Annotations >= 5.0.0"
     ]
@@ -7136,7 +7197,11 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\GESTOR DE PACIENTES\\GestorPacientes\\GestorPacientes.Application\\GestorPacientes.Application.csproj": {
+              "projectPath": "D:\\GESTOR DE PACIENTES\\GestorPacientes\\GestorPacientes.Application\\GestorPacientes.Application.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

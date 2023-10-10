@@ -20,18 +20,18 @@ namespace GestorPacientes.Application.Validations
                 return false;
             }
 
-            if (!model.id_paciente.HasValue)
+            if (model.id_paciente == 0)
             {
-                serviceResult.Message = "El idPacientes es requerido.";
-                serviceResult.Success = false;
-                return false;
+               serviceResult.Message = "El idPacientes es requerido.";
+               serviceResult.Success = false;
+               return false;
             }
 
-            if (model.Id_citas.HasValue)
+            if (model.Id_citas == 0)
             {
-                serviceResult.Message = "El Idcitas No es requerido.";
-                serviceResult.Success = false;
-                return false;
+               serviceResult.Message = "El Idcitas es requerido.";
+               serviceResult.Success = false;
+               return false;
             }
 
             if (model.Fecha_cita == DateTime.MinValue)
